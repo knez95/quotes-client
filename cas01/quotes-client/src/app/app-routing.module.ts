@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LoginComponent } from './components/login/login.component';
 import { QuotesComponent } from './components/quotes/quotes.component';
+import { RegisterComponent } from './components/register/register.component';
 import { SingleQuoteComponent } from './components/single-quote/single-quote.component';
 
-const routes: Routes = [{
+const routes: Routes = [
+{
+path :"",
+component : QuotesComponent
+},
+
+
+
+    {
            path : "quotes" ,
-           component : QuotesComponent
+           component :QuotesComponent
 
    },
    {
@@ -14,23 +24,22 @@ const routes: Routes = [{
 
    },
    {
-      path : "singeQuotes/:id",
+      path : "singeQuote/:id",
       component : SingleQuoteComponent
 
    },
    {
-    path : "login",
-    component : SingleQuoteComponent 
+    
 
+
+    path : "register",
+    component: RegisterComponent
    },
   {
-   path : "register",
-   component:SingleQuoteComponent
+   path : "login",
+   component : LoginComponent
 
   }
-
-
-
 
 ];
 

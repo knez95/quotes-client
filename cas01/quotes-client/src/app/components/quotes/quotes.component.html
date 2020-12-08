@@ -1,1 +1,18 @@
-<h2>List od all quotes</h2>
+<h2>
+
+{{ pageTitle }}
+</h2>
+
+<div class= "row">
+    <div class ="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+<app-quotes-table  [quotes]="quotes"></app-quotes-table>
+    </div>
+    <div class ="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+<app-single-quote></app-single-quote>
+    </div>
+
+
+</div>
+
+
+<!-- <input type = "text" [ngModel] = "pageTitle" />  -->
